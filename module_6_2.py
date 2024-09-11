@@ -1,5 +1,5 @@
 class Vehicle:
-    __COLOR_VARIANTS = ['Red', 'Yellow', 'White', 'Black', 'Gray', 'Green']
+    __COLOR_VARIANTS = ['red', 'yellow', 'white', 'black', 'gray', 'green']
 
     def __init__(self, owner, __model, __engine_power, __color):
         self.owner = str(owner)
@@ -29,12 +29,10 @@ class Vehicle:
         else:
             print(f'Нельзя сменить цвет на {new_color}\n')
 
-
 class Sedan(Vehicle):
     __PASSENGERS_LIMIT = 5
 
-
-avto1 = Sedan('Sergey', 'KIA RIO', 104, 'Green')
+avto1 = Sedan('Sergey', 'KIA RIO', 104, 'green')
 
 avto1.print_info()
 
